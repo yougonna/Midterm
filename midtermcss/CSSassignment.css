@@ -8,15 +8,15 @@ header {
 }
 
 h1 {
-text-align: center;
+	text-align: center;
 }
 
 nav a {
 	text-decoration: none;
 	text-align: center;
 }
-	
-	
+
+
 ul {
 	list-style-type: none;
 	margin-top: 25px;
@@ -43,7 +43,7 @@ ul li.active a {
 	background-color: #FFF;
 	color: #000;
 }
-	
+
 h3 {
 	width:300px;
 	height: auto;
@@ -64,16 +64,16 @@ td,tr {
 footer {
 	text-align: center;
 }
-
 .information {
-	margin: 20px;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
 }
-
 .image-container {
 	border: 1px solid #000;
- 	border-radius: 4px;
-  	padding: 5px;
- 	 
+	border-radius: 4px;
+	padding: 5px;
+
 }
 
 .image-container img {
@@ -95,6 +95,106 @@ footer {
 
 .image-one img {
 	width: 100%;
-	height: 10em;
+	height: 14em;
 	object-fit: cover;
+}
+.flexbox {
+	display: flex;
+}
+.information {
+	display: inline-block;
+	width: 50%;
+	padding: 16px;
+
+}
+.image-four {
+	display: inline-block;
+	width: 50%;
+
+}
+.image-four img {
+	width: 100%;
+	object-fit: cover;
+	border: 3px solid orange;
+}
+
+tr:nth-last-of-type(even) {
+	background-color: #ffb347;
+}
+a {
+	color: #d1651d;
+}
+a:hover {
+	color:#000;
+}
+.brain {
+	display: inline-block;
+	width: 50%;
+}
+
+.brain iframe {
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+footer {
+	font-size: 11px;
+}
+/**
+ *
+  */
+@media only screen and (max-width: 768px) {
+	.flexbox {
+		display: block;
+	}
+	.information {
+		width: 100%;
+	}
+	.image-four {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.brain iframe {
+		width: 100%;
+	}
+	.brain {
+		width:100%;
+	}
+	 .line {
+		 display: block;
+		 padding: 13px;
+		 text-align: left;
+	 }
+	 .fox{
+		 display: block;
+	 }
+	table {
+		 margin: 30px 0;
+		width: 100%;
+	 }
+}
+
+.line {
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+.line:last-of-type {
+	border-right: none;
+}
+
+
+.fox img {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.gallery{
+	margin-bottom: auto;
+	margin-top: auto;
+	display: block;
+	text-align: center;
 }
